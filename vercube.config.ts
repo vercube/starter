@@ -4,6 +4,6 @@ export default defineConfig({
   logLevel: 'debug',
 
   server: {
-    port: 3001,
+    port: 3000,
   },
 });
