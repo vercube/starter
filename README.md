@@ -5,7 +5,7 @@
 # Vercube minimal-starter
 An ultra-efficient JavaScript server framework that runs anywhere - Node.js, Bun, or Deno - with unmatched flexibility and complete configurability for developers who refuse to sacrifice speed or control.
 
-> [!INFO]
+> [!TIP]
 > Look at the [Vercube documentation](https://vercube.dev) to learn more.
 
 ## Setup
