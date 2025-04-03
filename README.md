@@ -1,5 +1,5 @@
 <p style="text-align: center" align="center">
-  <img src="https://github.com/OskarLebuda/vue-lazy-hydration/raw/main/.github/assets/logo.png?raw=true" width="200" alt="Vercube"/>
+  <img src="https://github.com/vercube/starter/raw/main/.github/assets/logo.png" width="200" alt="Vercube"/>
 </p>
 
 # Vercube minimal-starter
