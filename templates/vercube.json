@@ -1,0 +1,6 @@
+{
+  "name": "vercube",
+  "defaultDir": "vercube-app",
+  "url": "https://vercube.dev",
+  "tar": "https://codeload.github.com/vercube/starter/tar.gz/refs/heads/main"
+}

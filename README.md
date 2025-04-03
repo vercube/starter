@@ -2,24 +2,19 @@
   <img src="https://github.com/OskarLebuda/vue-lazy-hydration/raw/main/.github/assets/logo.png?raw=true" width="200" alt="Vercube"/>
 </p>
 
-# Vercube minimal-starter
+# Vercube quick starter
 An ultra-efficient JavaScript server framework that runs anywhere - Node.js, Bun, or Deno - with unmatched flexibility and complete configurability for developers who refuse to sacrifice speed or control.
 
-> [!TIP]
-> Look at the [Vercube documentation](https://vercube.dev) to learn more.
-
-## Setup
+## Usage
 ```bash
-# you can use any other package manager like npm, yarn, bun
-$ pnpm i
+$ pnpm create vercube@latest
 ```
 
-## Dev server
-```bash
-$ pnpm dev
-```
+## Contribution
+For improvements, please open a Pull Request to each individual branch.
 
-## Production build
-```bash
-$ pnpm build
-```
+**Note:** Please avoid commiting lock-files such as `pnpm-lock.yml`, `yarn.lock` and `package-lock.json` to template branches!
+
+## License
+
+[MIT](./LICENSE) - Made with 💜
