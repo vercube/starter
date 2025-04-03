@@ -2,6 +2,7 @@
   "name": "vercube-starter-app",
   "version": "1.0.0",
   "description": "Vercube Starter App",
+  "packageManager": "pnpm@9.15.0",
   "private": true,
   "type": "module",
   "scripts": {
