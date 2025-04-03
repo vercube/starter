@@ -10,10 +10,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@oxc-project/runtime": "latest",
-    "@vercube/cli": "latest",
-    "@vercube/core": "latest",
-    "@vercube/di": "latest"
+    "@oxc-project/runtime": "latest"
   },
   "devDependencies": {
     "eslint": "9.23.0",
