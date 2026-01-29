@@ -14,5 +14,4 @@ export default class PlaygroundController {
   public async index(): Promise<{ message: string }> {
     return { message: 'Hello, world!' };
   }
-
 }

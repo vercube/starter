@@ -2,12 +2,15 @@
   "name": "vercube-starter-app",
   "version": "1.0.0",
   "description": "Vercube Starter App",
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@10.28.2",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "vercube build",
-    "dev": "vercube dev"
+    "dev": "vercube dev",
+    "test:tscheck": "tsgo --noEmit",
+    "test:lint": "oxlint . --type-check && oxfmt --check",
+    "lint:fix": "oxlint --fix . && oxfmt --no-error-on-unmatched-pattern"
   },
   "license": "ISC",
   "dependencies": {
@@ -17,8 +20,11 @@
     "@vercube/di": "latest"
   },
   "devDependencies": {
-    "eslint": "9.23.0",
-    "eslint-config-unjs": "0.4.2",
+    "@typescript/native-preview": "7.0.0-dev.20260129.1",
+    "eslint": "9.39.2",
+    "eslint-config-unjs": "0.6.2",
+    "oxfmt": "^0.27.0",
+    "oxlint": "^1.42.0",
     "tslib": "2.8.1"
   }
 }
