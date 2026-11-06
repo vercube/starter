@@ -3,6 +3,9 @@
 .cache
 dist
 
+# Vite
+*.local
+
 # Node dependencies
 node_modules
 

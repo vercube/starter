@@ -6,4 +6,9 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+
+  build: {
+    // the typed route map apps/web imports, rewritten by `vercube dev` and `vercube build`
+    typegen: true,
+  },
 });
