@@ -10,4 +10,4 @@ if (import.meta.main) {
 
 export default {
   fetch: app.fetch.bind(app) as RequestHandler,
-}
+};

@@ -21,6 +21,7 @@
     "isolatedDeclarations": true,
     "declaration": true,
     "lib": ["es2022", "ESNext"],
+    "types": ["bun"],
     "typeRoots": [
       "node_modules/@types"
     ],
