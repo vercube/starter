@@ -39,4 +39,6 @@ Open http://localhost:5173.
 $ pnpm build
 ```
 
-The API is built to `apps/api/dist`, the web app to `apps/web/dist`.
+The API is built to `apps/api/dist`, the web app to `apps/web/dist`. In development Vite proxies `/api` to the API; in production serve both from one origin, for example behind a reverse proxy that sends `/api` to the API and everything else to `apps/web/dist`.
+
+The web app type-checks the API's controllers through the route map, so keep runtime-specific globals such as `Bun` out of controllers, or add their types to `apps/web/tsconfig.json`.
