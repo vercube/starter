@@ -26,6 +26,17 @@ An ultra-efficient JavaScript server framework that runs anywhere - Node.js, Bun
 $ pnpm create vercube@latest
 ```
 
+## Templates
+
+| Template | Branch | |
+|---|---|---|
+| `api` | [`template`](https://github.com/vercube/starter/tree/template) | A Vercube API, the default (also listed as `vercube`) |
+| `fullstack-vue` | [`template-fullstack-vue`](https://github.com/vercube/starter/tree/template-fullstack-vue) | A workspace with the API and a Vue app calling it through `@vercube/client` |
+
+```bash
+$ pnpm create vercube@latest my-app --template fullstack-vue
+```
+
 ## Contribution
 For improvements, please open a Pull Request to each individual branch.
 
