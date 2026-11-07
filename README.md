@@ -3,18 +3,20 @@
   <br>
   <br>
 
-# Vercube
+# Vercube + Vue
 
-### Minimal starter app
-
-[![Ask DeepWiki](<https://img.shields.io/badge/ask-deepwiki-%20blue?style=for-the-badge&logo=bookstack&logoColor=rgba(255%2C%20255%2C%20255%2C%200.6)&labelColor=%23000&color=%232f2f2f>)](https://deepwiki.com/vercube/vercube)
-
-**An ultra-efficient JavaScript server framework that runs anywhere - Node.js, Bun, or Deno - with unmatched flexibility and complete configurability for developers who refuse to sacrifice speed or control.**
+### Fullstack starter app
 
 </div>
 
 > [!TIP]
 > Look at the [Vercube documentation](https://vercube.dev) to learn more.
+
+- `apps/api`: the Vercube API on port 3000
+- `apps/web`: a Vue app on Vite, port 5173, which proxies `/api` to the API
+- `packages/`: code shared by both
+
+The web app calls the API through `@vercube/client`, typed by the API's controllers. `vercube dev` keeps `apps/api/.vercube/routes.d.ts` up to date, so changing a handler breaks every call that no longer fits at compile time.
 
 ## Setup
 
@@ -23,14 +25,20 @@
 $ pnpm i
 ```
 
-## Dev server
+## Dev servers
 
 ```bash
 $ pnpm dev
 ```
+
+Open http://localhost:5173.
 
 ## Production build
 
 ```bash
 $ pnpm build
 ```
+
+The API is built to `apps/api/dist`, the web app to `apps/web/dist`. In development Vite proxies `/api` to the API; in production serve both from one origin, for example behind a reverse proxy that sends `/api` to the API and everything else to `apps/web/dist`.
+
+The web app type-checks the API's controllers through the route map, so keep runtime-specific globals such as `Bun` out of controllers, or add their types to `apps/web/tsconfig.json`.
